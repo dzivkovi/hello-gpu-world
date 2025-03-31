@@ -28,7 +28,7 @@ nvidia-smi
 
 Sample output:
 
-```
+```text
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 572.83                 Driver Version: 572.83         CUDA Version: 12.8     |
 |-----------------------------------------+------------------------+----------------------+
@@ -52,7 +52,7 @@ nvcc --version
 
 Sample output:
 
-```
+```text
 nvcc: NVIDIA (R) Cuda compiler driver
 Copyright (c) 2005-2023 NVIDIA Corporation
 Built on Fri_Jan__6_16:45:21_Pacific_Standard_Time_2023
@@ -77,33 +77,6 @@ Make sure to install the PyTorch version that matches your CUDA version. For CUD
 
 ```bash
 pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121 --extra-index-url https://pypi.org/simple
-```
-
-For CUDA 12.1+:
-
-```bash
-pip install torch torchvision torchaudio
-```
-
-### 4. Install Additional Dependencies
-
-```bash
-pip install Pillow matplotlib
-```
-
-Or create a `requirements.txt` file with:
-```
-torch==2.4.0+cu121
-torchvision>=0.17.0
-torchaudio>=2.4.0
-pillow>=10.0.0
-matplotlib>=3.7.0
-```
-
-Then install with:
-
-```bash
-pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121
 ```
 
 ## Validation Scripts
